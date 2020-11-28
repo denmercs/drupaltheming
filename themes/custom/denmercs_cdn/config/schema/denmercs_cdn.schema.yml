@@ -1,0 +1,5 @@
+# Schema for the theme setting configuration file of the Denmercs CDN theme.
+
+denmercs_cdn.settings:
+  type: theme_settings
+  label: "Denmercs CDN settings"
