@@ -1,0 +1,33 @@
+<div class="container">
+  <header role="banner">
+    {{ page.header }}
+  </header>
+
+      <div>
+        {{ page.slider }}
+      </div>
+  <main role="main">
+    <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
+
+
+      <div class="articles">
+      <h3>Latest Articles </h3>
+        {{ page.content }}
+      </div>
+
+
+    {% if page.sidebar %}
+      <aside class="layout-sidebar-first" role="complementary">
+        {{ page.sidebar }}
+      </aside>
+    {% endif %}
+
+  </main>
+
+  {% if page.footer %}
+    <footer role="contentinfo">
+      {{ page.footer }}
+    </footer>
+  {% endif %}
+
+</div>{# /.layout-container #}

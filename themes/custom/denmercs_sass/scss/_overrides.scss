@@ -18,7 +18,13 @@
 // jQuery UI style overrides.
 @import "jquery-ui/autocomplete";
 
-ol, ul {
+body {
+  color: #654243;
+  background-color: #ececec;
+}
+
+ol,
+ul {
   padding-left: 1.5em;
   .popover &:last-child {
     margin-bottom: 0;
@@ -35,7 +41,7 @@ ol, ul {
   margin-top: 45px;
   padding-top: 35px;
   padding-bottom: 36px;
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #e5e5e5;
 }
 
 // Paragraphs.
@@ -57,13 +63,79 @@ p:last-child,
   }
 }
 
-
-.help-block, .control-group .help-inline {
+.help-block,
+.control-group .help-inline {
   color: $gray-light;
   font-size: 12px;
   margin: 5px 0 10px;
   padding: 0;
   &:first-child {
     margin-top: 0;
+  }
+}
+
+.region-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  width: auto;
+  height: 80px;
+}
+
+.name {
+  margin-top: 2px;
+}
+
+.view-content {
+  margin-top: 2rem;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  height: 600px;
+  margin-top: 2rem;
+}
+
+.carousel-item img {
+  width: 400px;
+  height: 600px;
+}
+
+.articles h3 {
+  padding: 0;
+  margin-top: 5rem !important;
+  text-transform: uppercase !important;
+  text-align: center;
+}
+
+.news-articles {
+  padding: 1rem;
+  margin: 1rem;
+
+  .view-field-title h3 {
+    padding-bottom: 1rem;
+  }
+}
+
+.item {
+  padding-left: 0 !important;
+}
+
+.item {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  li {
+    background-color: #fff;
+    list-style-type: none;
+    padding: 2rem;
+    margin: 2rem 0;
   }
 }
